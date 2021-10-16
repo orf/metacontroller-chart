@@ -39,12 +39,16 @@ jobs:
         with:
           github-token: ${{ github.token }}
           script: |
-            github.git.createRef({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              ref: "refs/tags/${{ matrix.tag }}",
-              sha: context.sha
-            })
+            try {
+              await github.git.createRef({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                ref: "refs/tags/${{ matrix.tag }}",
+                sha: context.sha
+              })
+            } catch (e) {
+              console.log(e);
+            }
 
       - name: Package
         if: always()
