@@ -6,12 +6,16 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        tag:
+          - v2.0.12
     steps:
       - name: Checkout
         uses: actions/checkout@v2
         with:
           repository: metacontroller/metacontroller
-          ref: v2.0.12
+          ref: ${{ matrix.tag }}
 
       - name: Configure Git
         run: |
@@ -30,10 +34,22 @@ jobs:
           tar -xzf cr.tar.gz -C "$HOME/cr/"
           rm -f cr.tar.gz
 
+      - name: Create tag
+        uses: actions/github-script@v3
+        with:
+          github-token: ${{ github.token }}
+          script: |
+            github.git.createRef({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: "refs/tags/${{ matrix.tag }}",
+              sha: context.sha
+            })
+
       - name: Package
         run: |
           $HOME/cr/cr package "deploy/helm/metacontroller/" --package-path .cr-release-packages
-          $HOME/cr/cr upload -o orf -r metacontroller-chart -c $(git rev-parse HEAD)
+          $HOME/cr/cr upload -o orf -r metacontroller-chart -c ${{ matrix.tag }}
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
 
