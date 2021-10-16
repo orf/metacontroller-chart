@@ -51,7 +51,7 @@ jobs:
         run: |
           $HOME/cr/cr package "deploy/helm/metacontroller/" --package-path .cr-release-packages
           echo
-          $HOME/cr/cr upload -o orf -r metacontroller-chart -c ${{ context.sha }}
+          $HOME/cr/cr upload -o orf -r metacontroller-chart
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
 
