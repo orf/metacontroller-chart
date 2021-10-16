@@ -25,16 +25,14 @@ jobs:
 
       - name: Install releaser
         run: |
-          mkdir -p $HOME/_releaser/
+          mkdir -p $HOME/cr/
           curl -sSLo cr.tar.gz "https://github.com/helm/chart-releaser/releases/download/v1.2.1/chart-releaser_1.2.1_linux_amd64.tar.gz"
-          tar -xzf cr.tar.gz -C "$HOME/_releaser/"
+          tar -xzf cr.tar.gz -C "$HOME/cr/"
           rm -f cr.tar.gz
-          ls $HOME/_releaser/
           echo 'Adding cr directory to PATH...'
-          export PATH="$HOME/_releaser:$PATH"
 
       - name: Package
-        run:  cr package "deploy/helm/metacontroller/" --package-path .cr-release-packages
+        run: $HOME/cr/cr package "deploy/helm/metacontroller/" --package-path .cr-release-packages
 
 #      - name: Run chart-releaser
 #        uses: helm/chart-releaser-action@v1.2.1
