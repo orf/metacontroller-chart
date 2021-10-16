@@ -66,7 +66,7 @@ jobs:
         if: always()
         run: |
           $HOME/cr/cr package "deploy/helm/metacontroller/" --package-path .cr-release-packages
-          $HOME/cr/cr upload -o orf -r metacontroller-chart
+          $HOME/cr/cr upload -o orf -r metacontroller-chart || true
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
 
