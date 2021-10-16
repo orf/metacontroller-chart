@@ -1,4 +1,4 @@
-name: Release Charts
+name: Release All Charts
 
 on:
   push:
