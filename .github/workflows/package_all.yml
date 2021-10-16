@@ -47,11 +47,13 @@ jobs:
             })
 
       - name: Package
+        if: always()
         run: |
           $HOME/cr/cr package "deploy/helm/metacontroller/" --package-path .cr-release-packages
           $HOME/cr/cr upload -o orf -r metacontroller-chart -c ${{ matrix.tag }}
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+
 
 #      - name: Run chart-releaser
 #        uses: helm/chart-releaser-action@v1.2.1
