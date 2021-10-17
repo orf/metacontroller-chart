@@ -66,9 +66,14 @@ jobs:
         if: always()
         run: |
           $HOME/cr/cr package "deploy/helm/metacontroller/" --package-path .cr-release-packages
-          $HOME/cr/cr upload -o orf -r metacontroller-chart || true
+          $HOME/cr/cr upload -o orf -r metacontroller-chart --skip-existing
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+      - name: Archive release
+        uses: actions/upload-artifact@v2
+        with:
+          name: release-${{ matrix.tag }}
+          path: .cr-release-packages/
 
   update-index:
     runs-on: ubuntu-latest
@@ -93,6 +98,9 @@ jobs:
           curl -sSLo cr.tar.gz "https://github.com/helm/chart-releaser/releases/download/v1.2.1/chart-releaser_1.2.1_linux_amd64.tar.gz"
           tar -xzf cr.tar.gz -C "$HOME/cr/"
           rm -f cr.tar.gz
+
+      - name: Download all workflow run artifacts
+        uses: actions/download-artifact@v2
 
       - name: Update index
         run: |
