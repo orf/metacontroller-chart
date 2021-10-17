@@ -104,6 +104,7 @@ jobs:
 
       - name: Update index
         run: |
+          mkdir .cr-index/
           $HOME/cr/cr index -o orf -r metacontroller-chart --push -c "https://orf.github.io/metacontroller-chart"
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
