@@ -1,6 +1,6 @@
 # Helm repo for Metacontroller
 
-Metacontroller does not publish a package (see [https://github.com/metacontroller/metacontroller/issues/302]).
+Metacontroller does not publish a package (see https://github.com/metacontroller/metacontroller/issues/302).
 
 This repo publishes their charts as an installable package.
 
