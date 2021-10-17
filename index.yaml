@@ -1,0 +1,186 @@
+apiVersion: v1
+entries:
+  metacontroller:
+  - apiVersion: v2
+    appVersion: v2.0.12
+    created: "2021-10-17T00:31:05.309405054Z"
+    description: Writing kubernetes controllers can be simple
+    digest: 2f5123ed15cbb6cfbe8022cbbcb116b4eb1cad94debdac2803a3606d6991dfe6
+    home: https://metacontroller.github.io/metacontroller/
+    kubeVersion: ^1.8.0-0
+    name: metacontroller
+    sources:
+    - https://github.com/metacontroller/metacontroller
+    type: application
+    urls:
+    - https://github.com/orf/metacontroller-chart/releases/download/metacontroller-v2.0.12/metacontroller-v2.0.12.tgz
+    version: v2.0.12
+  - apiVersion: v2
+    appVersion: v2.0.11
+    created: "2021-10-17T00:31:05.138906984Z"
+    description: Writing kubernetes controllers can be simple
+    digest: a36260f85a2806e5140853f72fb13e2cae2319c7b91ae5452dacfec30b445cd5
+    home: https://metacontroller.github.io/metacontroller/
+    kubeVersion: ^1.8.0-0
+    name: metacontroller
+    sources:
+    - https://github.com/metacontroller/metacontroller
+    type: application
+    urls:
+    - https://github.com/orf/metacontroller-chart/releases/download/metacontroller-v2.0.11/metacontroller-v2.0.11.tgz
+    version: v2.0.11
+  - apiVersion: v2
+    appVersion: v2.0.10
+    created: "2021-10-17T00:31:04.91030092Z"
+    description: Writing kubernetes controllers can be simple
+    digest: 1fe57a21048af1f973ee4b1a8ea27e017251f102a34969a97db2365f70caa8cb
+    home: https://metacontroller.github.io/metacontroller/
+    kubeVersion: ^1.8.0-0
+    name: metacontroller
+    sources:
+    - https://github.com/metacontroller/metacontroller
+    type: application
+    urls:
+    - https://github.com/orf/metacontroller-chart/releases/download/metacontroller-v2.0.10/metacontroller-v2.0.10.tgz
+    version: v2.0.10
+  - apiVersion: v2
+    appVersion: v2.0.9
+    created: "2021-10-17T00:31:06.693818638Z"
+    description: Writing kubernetes controllers can be simple
+    digest: 8ff15a3ce8765c314aa74861ba116d9edccf9e7b6fd43270298b21cba970836f
+    home: https://metacontroller.github.io/metacontroller/
+    kubeVersion: ^1.8.0-0
+    name: metacontroller
+    sources:
+    - https://github.com/metacontroller/metacontroller
+    type: application
+    urls:
+    - https://github.com/orf/metacontroller-chart/releases/download/metacontroller-v2.0.9/metacontroller-v2.0.9.tgz
+    version: v2.0.9
+  - apiVersion: v2
+    appVersion: v2.0.8
+    created: "2021-10-17T00:31:06.526949667Z"
+    description: Writing kubernetes controllers can be simple
+    digest: aa222cbd4022d3f061acd702f120fc7d6ba8adfbd6b1c948488f306eeabf071f
+    home: https://metacontroller.github.io/metacontroller/
+    kubeVersion: ^1.8.0-0
+    name: metacontroller
+    sources:
+    - https://github.com/metacontroller/metacontroller
+    type: application
+    urls:
+    - https://github.com/orf/metacontroller-chart/releases/download/metacontroller-v2.0.8/metacontroller-v2.0.8.tgz
+    version: v2.0.8
+  - apiVersion: v2
+    appVersion: v2.0.7
+    created: "2021-10-17T00:31:06.358956035Z"
+    description: Writing kubernetes controllers can be simple
+    digest: 96489b0ad887816d56eb5302615c80a4681a0349312ace2d1c07ae5f1d18203c
+    home: https://metacontroller.github.io/metacontroller/
+    kubeVersion: ^1.8.0-0
+    name: metacontroller
+    sources:
+    - https://github.com/metacontroller/metacontroller
+    type: application
+    urls:
+    - https://github.com/orf/metacontroller-chart/releases/download/metacontroller-v2.0.7/metacontroller-v2.0.7.tgz
+    version: v2.0.7
+  - apiVersion: v2
+    appVersion: v2.0.6
+    created: "2021-10-17T00:31:06.196451704Z"
+    description: Writing kubernetes controllers can be simple
+    digest: 5020636622878fae1ed3069deda197b8cda22d99dc0085b383415d34704aa57b
+    home: https://metacontroller.github.io/metacontroller/
+    kubeVersion: ^1.8.0-0
+    name: metacontroller
+    sources:
+    - https://github.com/metacontroller/metacontroller
+    type: application
+    urls:
+    - https://github.com/orf/metacontroller-chart/releases/download/metacontroller-v2.0.6/metacontroller-v2.0.6.tgz
+    version: v2.0.6
+  - apiVersion: v2
+    appVersion: v2.0.5
+    created: "2021-10-17T00:31:06.019462477Z"
+    description: Writing kubernetes controllers can be simple
+    digest: 2ded266b8d64768f52acaa5c15e55c184ce632cacf8a4e0a505797f6e6ae2b95
+    home: https://metacontroller.github.io/metacontroller/
+    kubeVersion: ^1.8.0-0
+    name: metacontroller
+    sources:
+    - https://github.com/metacontroller/metacontroller
+    type: application
+    urls:
+    - https://github.com/orf/metacontroller-chart/releases/download/metacontroller-v2.0.5/metacontroller-v2.0.5.tgz
+    version: v2.0.5
+  - apiVersion: v2
+    appVersion: v2.0.4
+    created: "2021-10-17T00:31:05.839178069Z"
+    description: Writing kubernetes controllers can be simple
+    digest: 37496bdee1f130c8916f975ca19e143bcf296f50b525effd3fd54e08a7b6ea61
+    home: https://metacontroller.github.io/metacontroller/
+    kubeVersion: ^1.8.0-0
+    name: metacontroller
+    sources:
+    - https://github.com/metacontroller/metacontroller
+    type: application
+    urls:
+    - https://github.com/orf/metacontroller-chart/releases/download/metacontroller-v2.0.4/metacontroller-v2.0.4.tgz
+    version: v2.0.4
+  - apiVersion: v2
+    appVersion: v2.0.3
+    created: "2021-10-17T00:31:05.638733853Z"
+    description: Writing kubernetes controllers can be simple
+    digest: 5c53bccccd256f419b35c50903b84901e0c55bb806640f53c1aa662b7f0c5492
+    home: https://metacontroller.github.io/metacontroller/
+    kubeVersion: ^1.8.0-0
+    name: metacontroller
+    sources:
+    - https://github.com/metacontroller/metacontroller
+    type: application
+    urls:
+    - https://github.com/orf/metacontroller-chart/releases/download/metacontroller-v2.0.3/metacontroller-v2.0.3.tgz
+    version: v2.0.3
+  - apiVersion: v2
+    appVersion: v2.0.2
+    created: "2021-10-17T00:31:05.477858112Z"
+    description: Writing kubernetes controllers can be simple
+    digest: bfd5f90fd7e36b05224d6d5d934d8652e8fb0766b48c4eef7d7dfb4f22642950
+    home: https://metacontroller.github.io/metacontroller/
+    kubeVersion: ^1.8.0-0
+    name: metacontroller
+    sources:
+    - https://github.com/metacontroller/metacontroller
+    type: application
+    urls:
+    - https://github.com/orf/metacontroller-chart/releases/download/metacontroller-v2.0.2/metacontroller-v2.0.2.tgz
+    version: v2.0.2
+  - apiVersion: v2
+    appVersion: v2.0.1
+    created: "2021-10-17T00:31:04.741923966Z"
+    description: Writing kubernetes controllers can be simple
+    digest: 6da49597216a2e0a7a87b1c4f3d0574398d39f4878c72c6653a972c6a811663d
+    home: https://metacontroller.github.io/metacontroller/
+    kubeVersion: ^1.8.0-0
+    name: metacontroller
+    sources:
+    - https://github.com/metacontroller/metacontroller
+    type: application
+    urls:
+    - https://github.com/orf/metacontroller-chart/releases/download/metacontroller-v2.0.1/metacontroller-v2.0.1.tgz
+    version: v2.0.1
+  - apiVersion: v2
+    appVersion: v2.0.0
+    created: "2021-10-17T00:31:04.579516441Z"
+    description: Writing kubernetes controllers can be simple
+    digest: 5e7cf64f994f19ac8653ebc7fdff6dd8c2e8c564f6bb15ffde9d9b2cd8ce137c
+    home: https://metacontroller.github.io/metacontroller/
+    kubeVersion: ^1.8.0-0
+    name: metacontroller
+    sources:
+    - https://github.com/metacontroller/metacontroller
+    type: application
+    urls:
+    - https://github.com/orf/metacontroller-chart/releases/download/metacontroller-v2.0.0/metacontroller-v2.0.0.tgz
+    version: v2.0.0
+generated: "2021-10-17T00:31:06.694439372Z"
